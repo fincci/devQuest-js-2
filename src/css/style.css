@@ -6,7 +6,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -54,7 +53,7 @@ body {
     transition: .3 ease-in-out;
 }
 
-.quest2, .quest3 {
+#quest2, #quest3 {
     border-top: solid 1px #D4D4D4;
 }
 
@@ -64,7 +63,7 @@ body {
     transition: .3s ease-in-out;
 }
 
-.container .card .wrapper .section .quest .caret:hover {
+.container .card .wrapper .section .quest:hover .caret {
     fill: #EDD7AD;
 }
 
@@ -84,7 +83,6 @@ body {
 }
 
 .container .card .wrapper .section .reply {
-    animation: slide-down;
     display: none;
     font-size: 15px;
     font-weight: 300;

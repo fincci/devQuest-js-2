@@ -1,12 +1,12 @@
-const arrows = document.querySelectorAll('.caret')
+const questions = document.querySelectorAll('.quest')
 const replys = document.querySelectorAll('.reply')
 const currentActive = document.querySelector('.active');
 
-arrows.forEach(caret => {
-    caret.addEventListener('click', () => {
+questions.forEach(quest => {
+    quest.addEventListener('click', () => {
         const replyBefore = document.querySelector('.active')
-        const replyN = caret.attributes.id.value
-        const replyAfter = document.querySelector('.' + replyN)
+        const replyN = quest.attributes.id.value
+        const replyAfter = document.querySelector(`.${replyN}`)
         if (replyBefore != null) {
             if (replyAfter.classList.contains('active')) {
                 replyAfter.classList.remove('active')
@@ -19,7 +19,7 @@ arrows.forEach(caret => {
         }
         
         const arrowBefore = document.querySelector('.fill')
-        const arrowAfter = caret
+        const arrowAfter = document.querySelector(`.caret${replyN}`)
         if (arrowBefore != null) {
             if (arrowAfter.classList.contains('fill')) {
                 arrowAfter.classList.remove('fill')
