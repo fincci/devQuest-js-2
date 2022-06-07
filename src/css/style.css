@@ -78,7 +78,7 @@ body {
 }
 
 @-webkit-keyframes slide-down {
-    0% { opacity: 0; -webkit-transform: translateY(-100%); }  
+    0% { opacity: 0; -webkit-transform: translateY(-100%); }
     100% { opacity: 1; -webkit-transform: translateY(0); }
 }
 
@@ -88,9 +88,9 @@ body {
     font-weight: 300;
     margin: 0 0 15px;
     user-select: none;
+    -webkit-animation: slide-down .3s ease-out;
 }
 
 .container .card .wrapper .section .reply.active {
     display: block;
-    -webkit-animation: slide-down .3s ease-out;
 }
