@@ -86,7 +86,8 @@ body {
     display: none;
     font-size: 15px;
     font-weight: 300;
-    margin: 0 0 15px;
+    margin: 0 20px 15px 0;
+    text-align: justify;
     user-select: none;
     -webkit-animation: slide-down .3s ease-out;
 }
