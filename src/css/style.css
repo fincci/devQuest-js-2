@@ -81,21 +81,17 @@ body {
     font-weight: 500;
 }
 
-@-webkit-keyframes slide-down {
-    0% { opacity: 0; -webkit-transform: translateY(-100%); }
-    100% { opacity: 1; -webkit-transform: translateY(0); }
-}
-
 .container .card .wrapper .section .reply {
-    display: none;
+    overflow: hidden;
+    height: 0;
     font-size: 15px;
     font-weight: 300;
-    margin: 0 20px 15px 0;
     text-align: justify;
     user-select: none;
-    -webkit-animation: slide-down .3s ease-out;
+    transition: .3s ease-in-out;
 }
 
 .container .card .wrapper .section .reply.active {
-    display: block;
+    height: 55px;
+    margin: 0 20px 15px 0;
 }
